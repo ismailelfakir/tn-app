@@ -1,0 +1,284 @@
+{
+    "roles": [
+      {
+        "id": "director",
+        "name": "Directeur de la Transition Numérique",
+        "avatar": "director.png",
+        "description": "Pilote la stratégie globale de changement et veille à l'alignement des équipes."
+      },
+      {
+        "id": "rh",
+        "name": "Responsable RH",
+        "avatar": "rh.png",
+        "description": "Accompagne les employés et gère les aspects humains et organisationnels."
+      },
+      {
+        "id": "manager",
+        "name": "Manager d’équipe",
+        "avatar": "manager.png",
+        "description": "Assure la cohésion, la motivation et l'adaptation opérationnelle des équipes."
+      },
+      {
+        "id": "chef_projet",
+        "name": "Chef de projet TN",
+        "avatar": "chef_projet.png",
+        "description": "Coordonne le déploiement, standardise les pratiques et gère les résistances."
+      },
+      {
+        "id": "responsable_info",
+        "name": "Responsable Informatique",
+        "avatar": "responsable_info.png",
+        "description": "Gère les outils numériques, leur adoption et l'adéquation au métier."
+      },
+      {
+        "id": "charge_ci",
+        "name": "Chargée de Communication Interne",
+        "avatar": "communication.png",
+        "description": "Diffuse les messages clés et garantit la clarté des communications."
+      },
+      {
+        "id": "employe",
+        "name": "Employée administrative",
+        "avatar": "employee.png",
+        "description": "Participe à la transformation et vit directement l'impact organisationnel."
+      },
+      {
+        "id": "technicien",
+        "name": "Technicien",
+        "avatar": "technician.png",
+        "description": "Utilise quotidiennement les outils et observe leur efficacité réelle."
+      }
+    ],
+    "questions": [
+      {
+        "id": 1,
+        "roleId": "director",
+        "scenario": "Après 3 mois de transformation numérique, une baisse d'engagement est observée dans les équipes.",
+        "choices": [
+          {
+            "label": "Accélérer le déploiement pour imposer l’adoption.",
+            "impact": { "cohesion": -5, "motivation": -8, "communication": -6 },
+            "feedback": "Accélérer la pression augmente la résistance (Herzberg). Les employés doivent comprendre et être accompagnés.",
+            "correct": false
+          },
+          {
+            "label": "Réévaluer la stratégie de communication et impliquer les managers de proximité.",
+            "impact": { "cohesion": 6, "motivation": 8, "communication": 10 },
+            "feedback": "Les managers jouent un rôle clé dans la réduction de l'incertitude (Libaert). Excellente décision.",
+            "correct": true
+          },
+          {
+            "label": "Externaliser la communication du projet.",
+            "impact": { "cohesion": -2, "motivation": -3, "communication": -5 },
+            "feedback": "Cela crée une distance et réduit la cohérence des messages internes.",
+            "correct": false
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "roleId": "rh",
+        "scenario": "Certains employés se sentent dépassés par les nouveaux outils.",
+        "choices": [
+          {
+            "label": "Proposer une formation unique et obligatoire.",
+            "impact": { "cohesion": 0, "motivation": -4, "communication": 0 },
+            "feedback": "Une formation unique ne répond pas aux besoins variés (Maslow).",
+            "correct": false
+          },
+          {
+            "label": "Mettre en place un accompagnement progressif et différencié selon les profils.",
+            "impact": { "cohesion": 6, "motivation": 10, "communication": 6 },
+            "feedback": "L'accompagnement progressif réduit la peur de l'inconnu et augmente la motivation.",
+            "correct": true
+          },
+          {
+            "label": "Reporter la transformation numérique.",
+            "impact": { "cohesion": -2, "motivation": -5, "communication": -3 },
+            "feedback": "Reporter crée de l'incertitude et fragilise le projet.",
+            "correct": false
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "roleId": "manager",
+        "scenario": "En télétravail, les interactions informelles ont disparu et la cohésion diminue.",
+        "choices": [
+          {
+            "label": "Mettre en place des rituels d’équipe mêlant travail et échanges informels.",
+            "impact": { "cohesion": 12, "motivation": 6, "communication": 5 },
+            "feedback": "Les rituels recréent la phase de normalisation (Tuckman) et renforcent la cohésion.",
+            "correct": true
+          },
+          {
+            "label": "Multiplier les réunions formelles longues.",
+            "impact": { "cohesion": -5, "motivation": -6, "communication": 0 },
+            "feedback": "Les longues réunions fatiguent et n'améliorent pas la cohésion.",
+            "correct": false
+          },
+          {
+            "label": "Laisser les employés s’adapter seuls.",
+            "impact": { "cohesion": -10, "motivation": -8, "communication": -5 },
+            "feedback": "Le manque de soutien augmente l’isolement.",
+            "correct": false
+          }
+        ]
+      },
+      {
+        "id": 4,
+        "roleId": "chef_projet",
+        "scenario": "Plusieurs services utilisent les outils numériques de manière différente, ce qui crée des tensions.",
+        "choices": [
+          {
+            "label": "Imposer une méthode unique sans concertation.",
+            "impact": { "cohesion": -8, "motivation": -6, "communication": -4 },
+            "feedback": "L’imposition directe crée des résistances (Herzberg).",
+            "correct": false
+          },
+          {
+            "label": "Laisser chaque service totalement libre.",
+            "impact": { "cohesion": -5, "motivation": 0, "communication": -3 },
+            "feedback": "Cela nuit à l'harmonisation du projet.",
+            "correct": false
+          },
+          {
+            "label": "Organiser des ateliers de co-construction des usages numériques.",
+            "impact": { "cohesion": 10, "motivation": 6, "communication": 8 },
+            "feedback": "La co-construction favorise l'adhésion et l'harmonisation (Libaert).",
+            "correct": true
+          }
+        ]
+      },
+  
+      {
+        "id": 5,
+        "roleId": "responsable_info",
+        "scenario": "Les employés trouvent les outils complexes et démotivants.",
+        "choices": [
+          {
+            "label": "Fournir uniquement une documentation technique.",
+            "impact": { "cohesion": 0, "motivation": -6, "communication": -4 },
+            "feedback": "La documentation seule ne suffit jamais pour motiver.",
+            "correct": false
+          },
+          {
+            "label": "Adapter les outils et proposer des formations orientées usages métier.",
+            "impact": { "cohesion": 5, "motivation": 10, "communication": 6 },
+            "feedback": "Aligner les outils sur les besoins métier augmente l'adoption.",
+            "correct": true
+          },
+          {
+            "label": "Imposer l’utilisation sans accompagnement.",
+            "impact": { "cohesion": -6, "motivation": -10, "communication": -6 },
+            "feedback": "L’imposition renforce la résistance au changement.",
+            "correct": false
+          }
+        ]
+      },
+  
+      {
+        "id": 6,
+        "roleId": "charge_ci",
+        "scenario": "Les messages liés à la transformation sont peu lus.",
+        "choices": [
+          {
+            "label": "Adapter les formats, canaux et messages aux publics ciblés.",
+            "impact": { "cohesion": 4, "motivation": 6, "communication": 12 },
+            "feedback": "Adapter les formats répond aux principes de communication efficace (Libaert).",
+            "correct": true
+          },
+          {
+            "label": "Augmenter le volume d’emails.",
+            "impact": { "cohesion": -1, "motivation": -3, "communication": -4 },
+            "feedback": "Plus d'emails = saturation et perte d'attention.",
+            "correct": false
+          },
+          {
+            "label": "Centraliser toute la communication sur un seul canal.",
+            "impact": { "cohesion": 0, "motivation": -2, "communication": -3 },
+            "feedback": "La communication doit être multicanale.",
+            "correct": false
+          }
+        ]
+      },
+  
+      {
+        "id": 7,
+        "roleId": "employe",
+        "scenario": "Quel facteur renforce le sentiment d'appartenance en contexte numérique ?",
+        "choices": [
+          {
+            "label": "Le travail individuel isolé.",
+            "impact": { "cohesion": -8, "motivation": -6, "communication": 0 },
+            "feedback": "L’isolement réduit fortement la cohésion.",
+            "correct": false
+          },
+          {
+            "label": "La reconnaissance et la communication avec l’équipe.",
+            "impact": { "cohesion": 10, "motivation": 12, "communication": 4 },
+            "feedback": "La reconnaissance est un moteur clé de la motivation (Herzberg).",
+            "correct": true
+          },
+          {
+            "label": "L’autonomie totale sans échange.",
+            "impact": { "cohesion": -5, "motivation": -3, "communication": 0 },
+            "feedback": "L’autonomie sans cadre ne construit pas la cohésion.",
+            "correct": false
+          }
+        ]
+      },
+  
+      {
+        "id": 8,
+        "roleId": "technicien",
+        "scenario": "Les changements numériques perturbent les habitudes de travail.",
+        "choices": [
+          {
+            "label": "Une pression accrue sur les résultats.",
+            "impact": { "cohesion": -6, "motivation": -10, "communication": -3 },
+            "feedback": "La pression augmente la résistance.",
+            "correct": false
+          },
+          {
+            "label": "Une transformation rapide sans explication.",
+            "impact": { "cohesion": -8, "motivation": -12, "communication": -6 },
+            "feedback": "Le manque de sens détruit la motivation (Maslow).",
+            "correct": false
+          },
+          {
+            "label": "Un accompagnement progressif et une reconnaissance des efforts.",
+            "impact": { "cohesion": 8, "motivation": 12, "communication": 6 },
+            "feedback": "Accompagner et reconnaître les efforts augmente fortement la motivation.",
+            "correct": true
+          }
+        ]
+      },
+  
+      {
+        "id": 9,
+        "roleId": "ambassadeur",
+        "scenario": "Un collègue rejette ouvertement les outils numériques.",
+        "choices": [
+          {
+            "label": "Le confronter publiquement.",
+            "impact": { "cohesion": -12, "motivation": -10, "communication": -6 },
+            "feedback": "La confrontation publique brise la confiance.",
+            "correct": false
+          },
+          {
+            "label": "Ignorer son attitude.",
+            "impact": { "cohesion": -4, "motivation": -6, "communication": -4 },
+            "feedback": "Ignorer le problème laisse la résistance s’amplifier.",
+            "correct": false
+          },
+          {
+            "label": "L’accompagner individuellement et partager des exemples concrets de réussite.",
+            "impact": { "cohesion": 10, "motivation": 8, "communication": 10 },
+            "feedback": "L'accompagnement personnalisé réduit la résistance au changement.",
+            "correct": true
+          }
+        ]
+      }
+    ]
+  }  
