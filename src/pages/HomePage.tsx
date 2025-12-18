@@ -96,9 +96,6 @@ export const HomePage = () => {
             <p className="text-lg sm:text-xl md:text-2xl text-gray-700 mb-2 font-semibold">
               Maîtrisez la Communication Interne pendant la Transition Numérique
             </p>
-            <p className="text-base sm:text-lg text-gray-600 max-w-2xl mx-auto px-4">
-              Apprenez à gérer le changement avec des scénarios interactifs basés sur les théories de Herzberg, Maslow, Libaert et Tuckman
-            </p>
           </motion.div>
 
           {/* Stats */}
