@@ -85,7 +85,7 @@ export const HomePage = () => {
             transition={{ delay: 0.3 }}
             className="text-4xl sm:text-5xl md:text-6xl font-bold text-gray-900 mb-4"
           >
-            TN Challenge
+            CITN Game
           </motion.h1>
 
           <motion.div
@@ -94,7 +94,7 @@ export const HomePage = () => {
             transition={{ delay: 0.4 }}
           >
             <p className="text-lg sm:text-xl md:text-2xl text-gray-700 mb-2 font-semibold">
-              Serious Game sur la Transition Numérique
+              Maîtrisez la Communication Interne pendant la Transition Numérique
             </p>
             <p className="text-base sm:text-lg text-gray-600 max-w-2xl mx-auto px-4">
               Apprenez à gérer le changement avec des scénarios interactifs basés sur les théories de Herzberg, Maslow, Libaert et Tuckman
