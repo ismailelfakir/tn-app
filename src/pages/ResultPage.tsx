@@ -137,8 +137,8 @@ export const ResultPage = () => {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.3 }}
               >
-                <CardTitle className="text-4xl mb-3">Challenge terminé !</CardTitle>
-                <CardDescription className="text-lg">
+                <CardTitle className="text-2xl sm:text-3xl md:text-4xl mb-3">Challenge terminé !</CardTitle>
+                <CardDescription className="text-base sm:text-lg px-4">
                   Rôle joué : <span className="font-semibold text-purple-600">{gameState.selectedRole.name}</span>
                 </CardDescription>
               </motion.div>
@@ -154,10 +154,10 @@ export const ResultPage = () => {
               >
                 <div className="text-center">
                   <Award className={`w-12 h-12 mx-auto mb-3 ${getLevelColor(resultMessage.level)}`} />
-                  <h3 className={`text-3xl font-bold mb-2 ${getLevelColor(resultMessage.level)}`}>
+                  <h3 className={`text-2xl sm:text-3xl font-bold mb-2 ${getLevelColor(resultMessage.level)}`}>
                     Niveau : {resultMessage.level}
                   </h3>
-                  <p className="text-gray-800 text-lg leading-relaxed">
+                  <p className="text-gray-800 text-base sm:text-lg leading-relaxed px-2">
                     {resultMessage.message}
                   </p>
                 </div>
@@ -174,7 +174,7 @@ export const ResultPage = () => {
                   <CardContent className="p-6 text-center">
                     <CheckCircle2 className="w-10 h-10 text-green-600 mx-auto mb-2" />
                     <p className="text-sm text-gray-600 mb-1">Bonnes réponses</p>
-                    <p className="text-4xl font-bold text-green-700">
+                    <p className="text-3xl sm:text-4xl font-bold text-green-700">
                       {correctAnswers}/{totalQuestions}
                     </p>
                   </CardContent>
@@ -184,7 +184,7 @@ export const ResultPage = () => {
                   <CardContent className="p-6 text-center">
                     <Target className="w-10 h-10 text-blue-600 mx-auto mb-2" />
                     <p className="text-sm text-gray-600 mb-1">Taux de réussite</p>
-                    <p className="text-4xl font-bold text-blue-700">
+                    <p className="text-3xl sm:text-4xl font-bold text-blue-700">
                       {successRate}%
                     </p>
                   </CardContent>
@@ -222,10 +222,10 @@ export const ResultPage = () => {
                           </p>
 
                           <div className="text-center mb-3">
-                            <span className={`text-3xl font-bold ${dim.textColor}`}>
+                            <span className={`text-2xl sm:text-3xl font-bold ${dim.textColor}`}>
                               {dim.value}
                             </span>
-                            <span className="text-sm text-gray-600 ml-1">pts</span>
+                            <span className="text-xs sm:text-sm text-gray-600 ml-1">pts</span>
                           </div>
 
                           {/* Progress bar */}

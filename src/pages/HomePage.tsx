@@ -83,7 +83,7 @@ export const HomePage = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.3 }}
-            className="text-6xl font-bold text-gray-900 mb-4"
+            className="text-4xl sm:text-5xl md:text-6xl font-bold text-gray-900 mb-4"
           >
             TN Challenge
           </motion.h1>
@@ -93,10 +93,10 @@ export const HomePage = () => {
             animate={{ opacity: 1 }}
             transition={{ delay: 0.4 }}
           >
-            <p className="text-2xl text-gray-700 mb-2 font-semibold">
+            <p className="text-lg sm:text-xl md:text-2xl text-gray-700 mb-2 font-semibold">
               Serious Game sur la Transition Numérique
             </p>
-            <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+            <p className="text-base sm:text-lg text-gray-600 max-w-2xl mx-auto px-4">
               Apprenez à gérer le changement avec des scénarios interactifs basés sur les théories de Herzberg, Maslow, Libaert et Tuckman
             </p>
           </motion.div>
@@ -106,7 +106,7 @@ export const HomePage = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.5 }}
-            className="flex justify-center gap-8 mt-8"
+            className="flex flex-wrap justify-center gap-3 sm:gap-8 mt-8 px-4"
           >
             {stats.map((stat, index) => (
               <motion.div
@@ -164,7 +164,7 @@ export const HomePage = () => {
           <Button
             size="lg"
             onClick={() => navigate('/roles')}
-            className="text-xl px-16 py-8 h-auto shadow-xl hover:shadow-2xl transition-all duration-300 bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700"
+            className="text-lg sm:text-xl px-8 sm:px-16 py-6 sm:py-8 h-auto shadow-xl hover:shadow-2xl transition-all duration-300 bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700"
           >
             <motion.span
               animate={{ x: [0, 5, 0] }}

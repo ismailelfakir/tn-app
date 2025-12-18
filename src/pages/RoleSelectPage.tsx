@@ -50,10 +50,10 @@ export const RoleSelectPage = () => {
               <Users className="w-8 h-8 text-purple-600" />
             </motion.div>
 
-            <h1 className="text-5xl font-bold text-gray-900 mb-4">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 mb-4 px-4">
               Choisissez votre rôle
             </h1>
-            <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+            <p className="text-base sm:text-lg md:text-xl text-gray-600 max-w-2xl mx-auto px-4">
               Sélectionnez le profil professionnel que vous souhaitez incarner dans ce challenge
             </p>
           </div>

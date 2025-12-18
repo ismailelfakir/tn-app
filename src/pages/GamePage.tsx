@@ -23,7 +23,6 @@ export const GamePage = () => {
     currentQuestionIndex, 
     totalQuestions, 
     handleAnswer,
-    progress,
     questionsRemaining 
   } = useGameLogic();
 
@@ -73,43 +72,31 @@ export const GamePage = () => {
           animate={{ opacity: 1, y: 0 }}
           className="mb-6"
         >
-          <div className="flex items-center justify-between mb-6">
+          {/* Mobile: Stack vertically, Desktop: Side by side */}
+          <div className="flex flex-col sm:flex-row items-stretch sm:items-center justify-between gap-3 sm:gap-4 mb-6">
             {/* Quit Button */}
             <Button
               variant="ghost"
               onClick={handleQuit}
-              className="hover:bg-white/50"
+              className="hover:bg-white/50 w-full sm:w-auto justify-start sm:justify-center"
             >
               <ArrowLeft className="w-4 h-4 mr-2" />
               Quitter
             </Button>
 
-            {/* Role Badge */}
+            {/* Role Badge - Full width on mobile */}
             <motion.div
               initial={{ scale: 0 }}
               animate={{ scale: 1 }}
               transition={{ type: "spring", stiffness: 200 }}
-              className="flex items-center space-x-3 bg-white px-6 py-3 rounded-lg shadow-lg border-2 border-purple-200"
+              className="flex items-center justify-center sm:justify-start space-x-2 sm:space-x-3 bg-white px-4 sm:px-6 py-2 sm:py-3 rounded-lg shadow-lg border-2 border-purple-200"
             >
-              <div className="w-10 h-10 rounded-full bg-gradient-to-br from-purple-400 to-pink-500 flex items-center justify-center">
-                <User className="w-6 h-6 text-white" />
+              <div className="w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-gradient-to-br from-purple-400 to-pink-500 flex items-center justify-center flex-shrink-0">
+                <User className="w-5 h-5 sm:w-6 sm:h-6 text-white" />
               </div>
-              <div className="text-left">
+              <div className="text-left min-w-0">
                 <p className="text-xs text-gray-500 font-medium">Vous jouez</p>
-                <p className="font-bold text-gray-900">{gameState.selectedRole.name}</p>
-              </div>
-            </motion.div>
-
-            {/* Progress Info */}
-            <motion.div
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ delay: 0.2 }}
-              className="hidden md:flex items-center space-x-2 bg-white px-4 py-2 rounded-lg shadow"
-            >
-              <div className="text-right">
-                <p className="text-xs text-gray-500">Progression</p>
-                <p className="text-sm font-bold text-purple-600">{progress}%</p>
+                <p className="font-bold text-gray-900 text-sm sm:text-base truncate">{gameState.selectedRole.name}</p>
               </div>
             </motion.div>
           </div>

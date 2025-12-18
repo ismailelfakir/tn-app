@@ -55,13 +55,13 @@ export const NotFoundPage = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.3 }}
             >
-              <CardTitle className="text-6xl font-bold text-gray-900 mb-4">
+              <CardTitle className="text-5xl sm:text-6xl font-bold text-gray-900 mb-4">
                 404
               </CardTitle>
-              <CardTitle className="text-3xl mb-3">
+              <CardTitle className="text-2xl sm:text-3xl mb-3 px-4">
                 Page non trouvée
               </CardTitle>
-              <CardDescription className="text-lg">
+              <CardDescription className="text-base sm:text-lg px-4">
                 Désolé, la page que vous recherchez n'existe pas ou a été déplacée.
               </CardDescription>
             </motion.div>
